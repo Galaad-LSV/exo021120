@@ -1,8 +1,7 @@
 ﻿using System;
 
-public class Class1
+
+public class DateTime
 {
-	public Class1()
-	{
-	}
+	public static DateTime.Now.ToString("MM/dd/yyyy HH:mm"); //Date sous forme 00/00/0000 00:00
 }
