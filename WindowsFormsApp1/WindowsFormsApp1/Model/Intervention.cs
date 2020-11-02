@@ -3,11 +3,11 @@
 public class Intervention
 {
     #region attributs
-    private static List<Intervention> collInterventions = new List<Intervention>();
+    private static List<Intervention> _collInterventions = new List<Intervention>();
 
-    private float dureePrevue;
-    private float dureeReelle;
-    private string description;
+    private float _dureePrevue;
+    private float _dureeReelle;
+    private string _description;
 
     /*
      * Le statut peut-être :
@@ -18,30 +18,29 @@ public class Intervention
      * T (Terminée)
      * 
      * */
-    private string statut;
-    private Panne laPanne;
-
+    private string _statut;
+    private Panne _laPanne;
     #endregion
 
     #region constructeurs
     public Intervention(float dureePrevue, string description, Panne unePanne)
     {
-        this.dureePrevue = dureePrevue;
-        this.description = description;
-        this.laPanne = unePanne;
-        this.dureeReelle = 0;
-        this.statut = "N";
-        collInterventions.Add(this);
+        this._dureePrevue = dureePrevue;
+        this._description = description;
+        this._laPanne = unePanne;
+        this._dureeReelle = 0;
+        this._statut = "paul";
+        _collInterventions.Add(this);
     }
     #endregion
 
     #region getters/setters
-    public static List<Intervention> CollInterventions { get => collInterventions; set => collInterventions = value; }
-    public float DureePrevue { get => dureePrevue; set => dureePrevue = value; }
-    public float DureeReelle { get => dureeReelle; set => dureeReelle = value; }
-    public string Description { get => description; set => description = value; }
-    public string Statut { get => statut; set => statut = value; }
-    public Panne LaPanne { get => laPanne; set => laPanne = value; }
+    public static List<Intervention> CollInterventions { get => _collInterventions; set => _collInterventions = value; }
+    public float DureePrevue { get => _dureePrevue; set => _dureePrevue = value; }
+    public float DureeReelle { get => _dureeReelle; set => _dureeReelle = value; }
+    public string Description { get => _description; set => _description = value; }
+    public string Statut { get => _statut; set => _statut = value; }
+    public Panne LaPanne { get => _laPanne; set => _laPanne = value; }
     #endregion
 
     #region methodes
