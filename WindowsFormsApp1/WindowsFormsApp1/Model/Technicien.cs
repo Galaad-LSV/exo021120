@@ -3,7 +3,7 @@
 public class Technicien
 {
     #region attributs
-    public static List<Technicien> CollClassStation = new List<Technicien>();
+    private static List<Technicien> CollClassStation = new List<Technicien>();
     private int _id;
     private string _nom;
     private string _prenom;
@@ -21,7 +21,10 @@ public class Technicien
     #endregion
 
     #region getters/setters
-
+    public static List<Technicien> CollClassStation1 { get => CollClassStation; set => CollClassStation = value; }
+    public int Id { get => _id; set => _id = value; }
+    public string Nom { get => _nom; set => _nom = value; }
+    public string Prenom { get => _prenom; set => _prenom = value; }
     #endregion
 
     #region methodes
