@@ -3,5 +3,7 @@
 
 public class DateTime
 {
-	public static DateTime.Now.ToString("MM/dd/yyyy HH:mm"); //Date sous forme 00/00/0000 00:00
+    #region Attribut
+    public static DateTime.Now.ToString("dd/MM/yyyy HH:mm"); //Date sous forme 00/00/0000 00:00
+    #endregion
 }
